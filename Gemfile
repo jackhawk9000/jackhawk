@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 ruby "2.4.0"
 
+# Slining Base Application
 gem "autoprefixer-rails"
 gem "bootstrap-sass", "~> 3.3.5"
 gem "delayed_job_active_record"
@@ -24,6 +25,14 @@ gem "sprockets-es6"
 gem "skylight"
 gem "title"
 gem "uglifier"
+
+# Authentication libraries
+gem "devise"
+gem "doorkeeper"
+gem "omniauth"
+gem "omniauth-github"
+gem "rack-oauth2"
+gem "jwt"
 
 group :development do
   gem "listen"

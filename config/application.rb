@@ -5,6 +5,7 @@ module Styler
   class Application < Rails::Application
     config.assets.quiet = true
     config.generators do |generate|
+      generate.template_engine :haml
       generate.helper false
       generate.javascript_engine false
       generate.request_specs false
